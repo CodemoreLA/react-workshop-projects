@@ -1,0 +1,67 @@
+[
+  {
+    "id": 101,
+    "username": "bobbythecat",
+    "avatar": "./images/bobby.jpg",
+    "time_elapsed": "21w",
+    "image": "./images/bobby.jpg",
+    "likes": "1,343",
+    "comments": [
+      {
+        "id": 599,
+        "username": "alex_g",
+        "comment": "Lookin' good Bobby!"
+      },
+      {
+        "id": 521,
+        "username": "maxie_boi",
+        "comment": "Look into my eyes... You're getting sleepy..."
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "username": "lorenstewart",
+    "avatar": "./images/avatar_loren1.jpg",
+    "time_elapsed": "1h",
+    "image": "./images/max.jpg",
+    "likes": "81",
+    "comments": [
+      {
+        "id": 564,
+        "username": "kirk_O_o",
+        "comment": "Did you get my text?"
+      },
+      {
+        "id": 501,
+        "username": "dg_89",
+        "comment": "You're so photogenic. ugh."
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "username": "maxie_boi",
+    "avatar": "./images/max.jpg",
+    "time_elapsed": "3w",
+    "image": "./images/peanut.jpg",
+    "likes": "1,829",
+    "comments": [
+      {
+        "id": 587,
+        "username": "jjrodriquez",
+        "comment": "When were you two hanging out!? Thanks for the invite. Sheesh."
+      },
+      {
+        "id": 545,
+        "username": "jon_nguyen",
+        "comment": "Max and Peanut, sittin' in a tree!!"
+      },
+      {
+        "id": 551,
+        "username": "lorenstewart",
+        "comment": "Hi!"
+      }
+    ]
+  }
+]

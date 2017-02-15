@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0 0 80px 0;
+  font-family: sans-serif;
+}
+.app-container {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.title {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 50px;
+  color: #BC232C;
+}
+.pin-container {
+  display: flex;
+  justify-content: center;
+}
+.pin {
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 235px;
+  padding: 10px;
+  margin: 5px;
+  transition: background-color .2s;
+  font-family: 'Arimo', sans-serif;
+  border: 3px solid #f3f3f3;
+}
+.pin:hover {
+  background-color: #f3f3f3;
+  transition: background-color .2s;
+}
+.featured-image img {
+  width: 100%;
+  border-radius: 6px;
+}
+.text-details h1 {
+  color: #424242;
+  font-size: 16px;
+}
+.text-details p {
+  color: #616161;
+  font-size: 15px;
+}
+.posted-by {
+  display: flex;
+  align-items: center;
+}
+.posted-by img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.posted-by p {
+  margin: 0;
+}
+.posted-by .name {
+  color: #424242;
+  font-size: 13px;
+  font-weight: 700;
+}
+.posted-by .topic {
+  color: #616161;
+  font-size: 13px;
+}
+.text-details .text-details-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.text-details h1 {
+  margin: 0;
+  max-width: 80%;
+}
+.pin-count {
+  color: #b5b5b5;
+  font-size: 11px;
+}
+.pin-count i {
+  margin-right: 5px;
+}

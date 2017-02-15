@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif;
+  color: #37474F;
+}
+.chart-container h1 {
+  text-align: center;
+  letter-spacing: .5px;
+  font-weight: 400;
+  color: #37474F;
+  font-size: 40px
+}
+.chart-container .scatter-plot {
+  border: 3px solid #B0BEC5;
+  height: 620px;
+  width: 620px;
+  margin: 20px auto;
+  background-color: #CFD8DC;
+  position: relative;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #EC407A;
+  border: 2px solid #AD1457;
+  cursor: pointer;
+}
+
+.tool-tip {
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  left: 50%;
+  padding: 20px;
+  width: 100px;
+  top: -100px;
+  background-color: #212121;
+  color: #CFD8DC;
+  border-radius: 6px;
+  z-index: 3;
+}
+.tool-tip:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #212121;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  top: 70px;
+  z-index: 2;
+}
+.controls-container {
+  display: flex;
+  width: 620px;
+  margin: 0 auto;
+  text-align: center;
+  border: 3px solid #37474F;
+}
+button {
+  flex: 1;
+  cursor: pointer;
+  height: 30px;
+  font-size: 16px;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: .5px;
+  background-color: #546E7A;
+  border: none;
+  color: #ffffff;
+  transition: .2s;
+}
+button:first-child {
+  border-right: 1px solid #37474F;
+}
+button:last-child {
+  border-left: 1px solid #37474F;
+}
+button:hover {
+  background-color: #37474F;
+  transition: .2s;
+}
+button:focus {
+  outline: none;
+}
