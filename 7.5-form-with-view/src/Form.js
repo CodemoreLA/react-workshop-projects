@@ -1,10 +1,24 @@
 import React, { Component } from 'react';
 
 class Form extends Component {
-
+  constructor() {
+    super();
+    this.handleFormSubmit = this.handleFormSubmit.bind(this);
+  }
+  handleFormSubmit(e) {
+    e.preventDefault();
+    const formData = {
+      firstName: this.props.firstName,
+      lastName: this.lastName.value, // get the value via refs
+      lunchChoice: this.props.lunchChoice,
+      programmer: this.props.isProgrammer,
+      ageRange: this.ageRange.value // get the value via refs
+    }
+    this.props.onFormSubmit(e, formData);
+  }
   render() {
     return(
-      <form onSubmit={(e) => this.props.onFormSubmit(e, this.lastName)}>
+      <form onSubmit={this.handleFormSubmit}>
         <div className="row">
           <div className="col-sm-6">
             <div className="form-group">
@@ -21,7 +35,7 @@ class Form extends Component {
               <label>Last Name</label>
               <input
                 type="text"
-                ref={(input => this.lastName = input)}
+                ref={(input) => this.lastName = input}
                 className="form-control" />
             </div>
           </div>
@@ -34,7 +48,8 @@ class Form extends Component {
                 onClick={this.props.onProgrammerClick}
                 type="checkbox" />
             </label>
-            <select className="form-control" onChange={this.props.onAgeSelect}>
+            <select className="form-control"
+              ref={(select) => this.ageRange = select}>
               <option value="">Select age range</option>
               {this.props.ageRanges.map(age => {
                 return <option key={age} value={age}>{age}</option>
